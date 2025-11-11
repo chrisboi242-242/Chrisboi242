@@ -380,8 +380,192 @@ a.btn {
     transform: scale(1.2);
 }
 
+@media (max-width: 768px) {
+            /* --- Header Adjustments --- */
+            .header .container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 15px 10px;
+            }
 
+            .logo {
+                margin-bottom: 15px;
+                font-size: 1.6rem;
+            }
+            
+            nav .ulHero {
+                flex-direction: column;
+                gap: 15px;
+                width: 100%;
+            }
 
+            nav .ulHero li a {
+                font-size: 1rem;
+            }
+            
+            /* Remove complex hover effects */
+            nav .ulHero:hover,
+            nav .ulHero li a:hover {
+                transform: none;
+            }
+
+            .contact {
+                margin-top: 10px;
+                padding: 8px 20px;
+            }
+
+            /* --- Hero Section Adjustments --- */
+            .hero {
+                padding: 60px 20px;
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .hero-Content h2 {
+                font-size: 1.8rem;
+            }
+
+            .hero-Content h3 {
+                font-size: 1.1rem;
+                max-width: 100%;
+                margin: 10px auto;
+            }
+            
+            .hero-Content p {
+                font-size: 1rem;
+                max-width: 100%;
+                margin: 15px 0;
+            }
+            
+            /* Remove complex hover effects */
+            .hero-Content h2:hover,
+            .hero-image img:hover,
+            .btn:hover {
+                transform: none;
+                color: inherit;
+            }
+
+            .hero-image img {
+                height: 300px;
+                width: 300px;
+                margin-top: 30px;
+            }
+
+            /* --- About Section Adjustments --- */
+            .about {
+                padding: 60px 20px;
+                justify-content: center;
+            }
+
+            .about-container {
+                flex-direction: column;
+                gap: 30px;
+                text-align: center;
+            }
+
+            .about h2 {
+                font-size: 1.8rem;
+            }
+            
+            /* Remove complex hover effects */
+            .about h2:hover,
+            .about-image img:hover {
+                transform: none;
+                color: inherit;
+            }
+
+            .about p {
+                font-size: 1rem;
+                max-width: 100%;
+            }
+
+            .about-image img {
+                width: 250px;
+                height: 250px;
+            }
+
+            /* --- Skills and Projects Adjustments --- */
+            .Skills, .projects {
+                padding: 40px 20px;
+            }
+
+            .Skills h2, .projects h2 {
+                font-size: 1.8rem;
+            }
+            
+            /* Remove complex hover effects */
+            .Skills h2:hover,
+            .projects h2:hover {
+                transform: none;
+                color: inherit;
+            }
+
+            .skills-cards, .project-cards {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .skills-card, .project-card {
+                width: 100%;
+                max-width: 350px;
+                margin: 0 auto;
+            }
+            
+            /* Remove complex hover effects from cards */
+            .skills-card:hover,
+            .project-card:hover {
+                transform: none;
+                box-shadow: 2px 4px 10px rgba(0,0,0,0.2);
+            }
+            
+            /* Adjust button in project cards to be a block for better tap target */
+            .project-card .btn {
+                display: block;
+            }
+
+            /* --- Contact Section Adjustments --- */
+            .contact {
+                margin: 30px 10px;
+                padding: 10px;
+                max-width: 100%;
+            }
+            
+            .contact-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .contact-form,
+            .description {
+                flex: 1 1 100%;
+            }
+            
+            .description h3, .description ul, .description p {
+                padding-left: 15px;
+            }
+            
+            .contact-form .btn:hover {
+                background-color: rgb(0, 0, 0);
+                color: rgb(5, 240, 228);
+                transition: none;
+            }
+
+            /* --- Footer Adjustments --- */
+            .footer {
+                padding: 15px 10px;
+            }
+            
+            .footer p {
+                flex-direction: column;
+                gap: 10px;
+                font-size: 0.9rem;
+            }
+            
+            .footer a img:hover {
+                transform: none;
+            }
+        }
     
 
 
