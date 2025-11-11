@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Java-Script</title>
+    <link rel="stylesheet" href="./chris.css">
+</head>
+<body>
+    <!-- <h2>Inline JavaScript Example</h2>
+    <button onclick="alert('Hello, World!')">Click Me!</button> -->
+
+
+    <!-- <script>
+        let age = "female"
+        if (age >= 18) {
+            console.log("You are an adult.");
+        } else {
+            console.log("You are under age.");
+        }
+    </script> -->
+
+
+    <h2>Student Grade Checker</h2>
+    <input type="number" id="scoreinput"
+    placeholder="Enter score out of 100"/>
+    <button onclick="checkGrade()">Check Grade</button>
+
+    <div class="result" id="resultBox"></div>
+
+    <script>
+        function checkGrade(){
+         const score = parseInt(document.getElementById("scoreinput").value);
+         let grade;
+
+            if (score >= 80) {
+                grade = "A";
+            } else if (score >= 70) {
+                grade = "B";
+            } else if (score >= 60) {
+                grade = "C";
+            } else if (score >= 40) {
+                grade = "D";
+            } else {
+                grade = "F";
+            }
+        document.getElementById("resultBox").innerText = "Your grade is: " + grade;
+        }
+    </script>
+</body>
+</html>
