@@ -421,6 +421,13 @@ a.btn {
                 flex-direction: column;
                 text-align: center;
             }
+            .hero-Content{
+                order: 2;
+                margin-top: 20px;
+            }
+            .hero-img{
+                order: 1;
+            }
             
             .hero-Content h2 {
                 font-size: 1.8rem;
